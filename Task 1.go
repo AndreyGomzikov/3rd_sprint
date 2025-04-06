@@ -6,11 +6,11 @@ import (
 )
 
 func countWords(text string) map[string]int {
-	words := strings.Fields(text) // Разбиваем строку на слова
+	words := strings.Fields(text)
 	wordCount := make(map[string]int)
 
 	for _, word := range words {
-		wordCount[word]++ // Увеличиваем счетчик для каждого слова
+		wordCount[word]++
 	}
 
 	return wordCount
